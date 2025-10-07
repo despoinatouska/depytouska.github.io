@@ -77,7 +77,7 @@
       outline-offset: 2px;
     }
   </style>
-  <link rel="preload" as="image" href="./white.gif">
+  <link rel="preload" as="image" href="./white3.gif">
 
 </head>
 
@@ -121,8 +121,8 @@
           in Artificial
           Intelligence (cum laude) from the University of Amsterdam</a> and an <a
           href="https://www.auth.gr/en/school/ee-en/">MEng
-          in Electrical & Computer Engineering from Aristotle University of Thessaloniki</a>. 
-        </p>
+          in Electrical & Computer Engineering from Aristotle University of Thessaloniki</a>.
+      </p>
       <p>My research focuses on
         computer vision, with emphasis on representation learning (disentanglement, object-centric methods) and
         generative techniques, including diffusion models and VAEs.
@@ -345,7 +345,7 @@
       function updateAssetsForTheme(theme) {
         const img = document.getElementById('face_img');
         if (img) {
-          const nextSrc = theme === 'dark' ? './pc.gif' : './white.gif';
+          const nextSrc = theme === 'dark' ? './pc.gif' : './white3.gif';
           if (img.getAttribute('src') !== nextSrc) {
             img.setAttribute('src', nextSrc);
             img.setAttribute('alt', theme === 'dark'
@@ -384,9 +384,9 @@
         return prefersDark ? 'dark' : 'light';
       }
 
-      // Preload white.gif to avoid flicker the first time you toggle
+      // Preload white3.gif to avoid flicker the first time you toggle
       const preloadLight = new Image();
-      preloadLight.src = './white.gif';
+      preloadLight.src = './white3.gif';
 
       // Initialize theme + assets on load
       setTheme(getInitialTheme());
